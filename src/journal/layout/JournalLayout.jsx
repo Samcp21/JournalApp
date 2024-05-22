@@ -8,7 +8,7 @@ export const JournalLayout = ({ children }) => {
   return (
     <Box
       sx={{ display: "flex" }}
-      className="animate_animated animate_fadeIn animate__faster"
+      className="animate__animated animate__fadeIn animate__faster"
     >
       <NavBar drawerWidth={drawerWidth} />
 
