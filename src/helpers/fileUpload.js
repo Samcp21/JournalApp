@@ -1,7 +1,7 @@
 export const fileUpload = async (file) => {
   const { VITE_CLOUDINARY_NAME, VITE_CLOUDINARY_PRESET } = import.meta.env;
   if (!file) throw new Error("No tenemos ningun archivo para subir");
-  const cloudUrl = `https://api.cloudinary.com/v1_1/${VITE_CLOUDINARY_NAME}}/upload`;
+  const cloudUrl = `https://api.cloudinary.com/v1_1/${VITE_CLOUDINARY_NAME}/upload`;
 
   const formData = new FormData();
   formData.append("upload_preset", `${VITE_CLOUDINARY_PRESET}`);
