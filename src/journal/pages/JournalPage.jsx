@@ -19,7 +19,7 @@ export const JournalPage = () => {
     <JournalLayout>
       {/* <NothingSelectedView /> */}
       {/* <NoteView /> */}
-      {!!active ? <NoteView /> : <NothingSelectedView />}
+      {active ? <NoteView /> : <NothingSelectedView />}
       <IconButton
         onClick={onClickNewNote}
         size="large"
